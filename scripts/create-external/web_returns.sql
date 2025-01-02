@@ -1,4 +1,4 @@
-create table web_returns_ext 
+create table DB_NAME.web_returns_ext
 (
     wr_returned_date_sk       int                           ,
     wr_returned_time_sk       int                           ,
@@ -26,4 +26,4 @@ create table web_returns_ext
     wr_net_loss               decimal(7,2)                   
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_datafiles_audit/web_returns';
+LOCATION 'DATA_FILES_PATH/web_returns';

@@ -1,4 +1,4 @@
-create table time_dim_ext 
+create table DB_NAME.time_dim_ext
 (
     t_time_sk                 int                           ,
     t_time_id                 varchar(16)                      ,
@@ -12,4 +12,4 @@ create table time_dim_ext
     t_meal_time               varchar(20)                       
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_datafiles_audit/time_dim' ;
+LOCATION 'DATA_FILES_PATH/time_dim' ;

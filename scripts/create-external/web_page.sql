@@ -1,4 +1,4 @@
-create table web_page_ext 
+create table DB_NAME.web_page_ext
 (
     wp_web_page_sk            int                           ,
     wp_web_page_id            varchar(16)                      ,
@@ -16,5 +16,5 @@ create table web_page_ext
     wp_max_ad_count           int                            
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_datafiles_audit/web_page';
+LOCATION 'DATA_FILES_PATH/web_page';
 

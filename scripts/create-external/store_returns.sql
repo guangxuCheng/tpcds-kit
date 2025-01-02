@@ -1,4 +1,4 @@
-create table store_returns_ext 
+create table DB_NAME.store_returns_ext
 (
     sr_returned_date_sk       int                           ,
     sr_return_time_sk         int                           ,
@@ -22,4 +22,4 @@ create table store_returns_ext
     sr_net_loss               decimal(7,2)                   
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_datafiles_audit/store_returns' ;
+LOCATION 'DATA_FILES_PATH/store_returns' ;

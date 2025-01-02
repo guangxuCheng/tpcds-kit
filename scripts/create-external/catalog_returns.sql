@@ -1,4 +1,4 @@
-create table catalog_returns_ext 
+create table DB_NAME.catalog_returns_ext
 (
     cr_returned_date_sk       int                           ,
     cr_returned_time_sk       int                           ,
@@ -29,4 +29,4 @@ create table catalog_returns_ext
     cr_net_loss               decimal(7,2)                   
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_datafiles_audit/catalog_returns';
+LOCATION 'DATA_FILES_PATH/catalog_returns';

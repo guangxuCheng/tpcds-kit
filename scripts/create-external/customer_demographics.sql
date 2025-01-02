@@ -1,4 +1,4 @@
-create table customer_demographics_ext 
+create table DB_NAME.customer_demographics_ext
 (
     cd_demo_sk                int                           ,
     cd_gender                 varchar(1)                       ,
@@ -11,4 +11,4 @@ create table customer_demographics_ext
     cd_dep_college_count      int                            
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_datafiles_audit/customer_demographics' ;
+LOCATION 'DATA_FILES_PATH/customer_demographics' ;

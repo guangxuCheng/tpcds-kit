@@ -1,4 +1,4 @@
-create table call_center_ext 
+create table DB_NAME.call_center_ext
 (
     cc_call_center_sk         int                           ,
     cc_call_center_id         varchar(16)                      ,
@@ -33,4 +33,4 @@ create table call_center_ext
     cc_tax_percentage         decimal(5,2)                   
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_datafiles_audit/call_center';
+LOCATION 'DATA_FILES_PATH/call_center';

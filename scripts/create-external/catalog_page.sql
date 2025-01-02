@@ -1,4 +1,4 @@
-create table catalog_page_ext 
+create table DB_NAME.catalog_page_ext
 (
     cp_catalog_page_sk        int                           ,
     cp_catalog_page_id        varchar(16)                      ,
@@ -11,4 +11,4 @@ create table catalog_page_ext
     cp_type                   varchar(100)                   
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_datafiles_audit/catalog_page';
+LOCATION 'DATA_FILES_PATH/catalog_page';

@@ -1,4 +1,4 @@
-create table customer_ext 
+create table DB_NAME.customer_ext
 (
     c_customer_sk             int                           ,
     c_customer_id             varchar(16)                      ,
@@ -20,4 +20,4 @@ create table customer_ext
     c_last_review_date_sk     int                       
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_datafiles_audit/customer' ;
+LOCATION 'DATA_FILES_PATH/customer' ;

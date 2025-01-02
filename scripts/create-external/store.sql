@@ -1,4 +1,4 @@
-create table store_ext 
+create table DB_NAME.store_ext
 (
     s_store_sk                int                           ,
     s_store_id                varchar(16)                      ,
@@ -31,4 +31,4 @@ create table store_ext
     s_tax_precentage          decimal(5,2)                   
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_datafiles_audit/store' ;
+LOCATION 'DATA_FILES_PATH/store' ;

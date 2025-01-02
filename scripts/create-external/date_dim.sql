@@ -1,4 +1,4 @@
-create table date_dim_ext 
+create table DB_NAME.date_dim_ext
 (
     d_date_sk                 int                           ,
     d_date_id                 varchar(16)                      ,
@@ -30,4 +30,4 @@ create table date_dim_ext
     d_current_year            varchar(1)                        
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_datafiles_audit/date_dim' ;
+LOCATION 'DATA_FILES_PATH/date_dim' ;

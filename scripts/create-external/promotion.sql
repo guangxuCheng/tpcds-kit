@@ -1,4 +1,4 @@
-create table promotion_ext 
+create table DB_NAME.promotion_ext
 (
     p_promo_sk                int                           ,
     p_promo_id                varchar(16)                      ,
@@ -21,4 +21,4 @@ create table promotion_ext
     p_discount_active         varchar(1)                        
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_datafiles_audit/promotion' ;
+LOCATION 'DATA_FILES_PATH/promotion' ;

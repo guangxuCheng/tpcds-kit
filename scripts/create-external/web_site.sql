@@ -1,4 +1,4 @@
-create table web_site_ext 
+create table DB_NAME.web_site_ext
 (
     web_site_sk               int                           ,
     web_site_id               varchar(16)                      ,
@@ -28,5 +28,5 @@ create table web_site_ext
     web_tax_percentage        decimal(5,2)                   
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_datafiles_audit/web_site';
+LOCATION 'DATA_FILES_PATH/web_site';
 

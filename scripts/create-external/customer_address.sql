@@ -1,4 +1,4 @@
-create table customer_address_ext 
+create table DB_NAME.customer_address_ext
 (
     ca_address_sk             int                           ,
     ca_address_id             varchar(16)                      ,
@@ -15,4 +15,4 @@ create table customer_address_ext
     ca_location_type          varchar(20)                       
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_datafiles_audit/customer_address' ;
+LOCATION 'DATA_FILES_PATH/customer_address' ;

@@ -1,4 +1,4 @@
-create table ship_mode_ext 
+create table DB_NAME.ship_mode_ext
 (
     sm_ship_mode_sk           int                           ,
     sm_ship_mode_id           varchar(16)                      ,
@@ -8,4 +8,4 @@ create table ship_mode_ext
     sm_contract               varchar(20)                       
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_datafiles_audit/ship_mode' ;
+LOCATION 'DATA_FILES_PATH/ship_mode' ;

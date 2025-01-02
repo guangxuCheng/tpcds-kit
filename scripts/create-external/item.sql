@@ -1,4 +1,4 @@
-create table item_ext 
+create table DB_NAME.item_ext
 (
     i_item_sk                 int                           ,
     i_item_id                 varchar(16)                      ,
@@ -24,4 +24,4 @@ create table item_ext
     i_product_name            varchar(50)                       
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_datafiles_audit/item' ;
+LOCATION 'DATA_FILES_PATH/item' ;

@@ -1,4 +1,4 @@
-create table warehouse_ext 
+create table DB_NAME.warehouse_ext
 (
     w_warehouse_sk            int                           ,
     w_warehouse_id            varchar(16)                      ,
@@ -16,4 +16,4 @@ create table warehouse_ext
     w_gmt_offset              decimal(5,2)                   
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_datafiles_audit/warehouse';
+LOCATION 'DATA_FILES_PATH/warehouse';

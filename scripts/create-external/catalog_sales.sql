@@ -1,4 +1,4 @@
-create table catalog_sales_ext 
+create table DB_NAME.catalog_sales_ext
 (
     cs_sold_date_sk           int                           ,
     cs_sold_time_sk           int                           ,
@@ -36,4 +36,4 @@ create table catalog_sales_ext
     cs_net_profit             decimal(7,2)                   
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_datafiles_audit/catalog_sales' ;
+LOCATION 'DATA_FILES_PATH/catalog_sales' ;
