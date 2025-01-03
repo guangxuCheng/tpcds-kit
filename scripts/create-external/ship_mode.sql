@@ -8,4 +8,4 @@ create table DB_NAME.ship_mode_ext
     sm_contract               varchar(20)                       
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'DATA_FILES_PATH/ship_mode' ;
+LOCATION 'DATA_FILES_PATH/ship_mode_ext';

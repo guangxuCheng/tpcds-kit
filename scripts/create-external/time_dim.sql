@@ -12,4 +12,4 @@ create table DB_NAME.time_dim_ext
     t_meal_time               varchar(20)                       
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'DATA_FILES_PATH/time_dim' ;
+LOCATION 'DATA_FILES_PATH/time_dim_ext';

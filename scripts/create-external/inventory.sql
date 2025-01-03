@@ -6,4 +6,4 @@ create table DB_NAME.inventory_ext
     inv_quantity_on_hand      int                            
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'DATA_FILES_PATH/inventory' ;
+LOCATION 'DATA_FILES_PATH/inventory_ext';

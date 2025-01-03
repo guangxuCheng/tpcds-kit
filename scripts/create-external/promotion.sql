@@ -21,4 +21,4 @@ create table DB_NAME.promotion_ext
     p_discount_active         varchar(1)                        
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'DATA_FILES_PATH/promotion' ;
+LOCATION 'DATA_FILES_PATH/promotion_ext';

@@ -16,5 +16,5 @@ create table DB_NAME.web_page_ext
     wp_max_ad_count           int                            
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'DATA_FILES_PATH/web_page';
+LOCATION 'DATA_FILES_PATH/web_page_ext';
 
