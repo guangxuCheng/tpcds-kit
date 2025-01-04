@@ -26,7 +26,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_catalog_page'
+location 'DBFS_MT_FILES/3/s_catalog_page'
 ;
 
 
@@ -52,7 +52,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_zip_to_gmt'
+location 'DBFS_MT_FILES/3/s_zip_to_gmt'
 ;
 
 
@@ -85,7 +85,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_purchase_lineitem'
+location 'DBFS_MT_FILES/3/s_purchase_lineitem'
 ;
 
 
@@ -146,7 +146,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_customer'
+location 'DBFS_MT_FILES/3/s_customer'
 ;
 
 
@@ -181,7 +181,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_customer_address'
+location 'DBFS_MT_FILES/3/s_customer_address'
 ;
 
 
@@ -213,7 +213,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_purchase'
+location 'DBFS_MT_FILES/3/s_purchase'
 ;
 
 
@@ -245,7 +245,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_catalog_order'
+location 'DBFS_MT_FILES/3/s_catalog_order'
 ;
 
 
@@ -277,7 +277,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_web_order'
+location 'DBFS_MT_FILES/3/s_web_order'
 ;
 
 
@@ -311,7 +311,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_item'
+location 'DBFS_MT_FILES/3/s_item'
 ;
 
 
@@ -347,7 +347,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_catalog_order_lineitem'
+location 'DBFS_MT_FILES/3/s_catalog_order_lineitem'
 ;
 
 
@@ -382,7 +382,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_web_order_lineitem'
+location 'DBFS_MT_FILES/3/s_web_order_lineitem'
 ;
 
 
@@ -417,7 +417,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_store'
+location 'DBFS_MT_FILES/3/s_store'
 ;
 
 
@@ -451,7 +451,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_call_center'
+location 'DBFS_MT_FILES/3/s_call_center'
 ;
 
 
@@ -482,7 +482,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_web_site'
+location 'DBFS_MT_FILES/3/s_web_site'
 ;
 
 
@@ -509,7 +509,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_warehouse'
+location 'DBFS_MT_FILES/3/s_warehouse'
 ;
 
 
@@ -543,7 +543,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_web_page'
+location 'DBFS_MT_FILES/3/s_web_page'
 ;
 
 
@@ -585,7 +585,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_promotion'
+location 'DBFS_MT_FILES/3/s_promotion'
 ;
 
 
@@ -626,7 +626,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_store_returns'
+location 'DBFS_MT_FILES/3/s_store_returns'
 ;
 
 
@@ -670,7 +670,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_catalog_returns'
+location 'DBFS_MT_FILES/3/s_catalog_returns'
 ;
 
 
@@ -711,7 +711,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_web_returns'
+location 'DBFS_MT_FILES/3/s_web_returns'
 ;
 
 
@@ -739,5 +739,5 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'dbfs:/mnt/aws-tpcds-audit//tpcds_100000_maintenance_files_audit/3/s_inventory'
+location 'DBFS_MT_FILES/3/s_inventory'
 ;
