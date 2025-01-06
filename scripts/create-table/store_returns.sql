@@ -21,5 +21,6 @@ create table store_returns
     sr_store_credit           decimal(7,2)                  ,
     sr_net_loss               decimal(7,2)                   
 ) 
-USING delta;
+USING delta
+PARTITIONED BY (sr_returned_date_sk);
 
