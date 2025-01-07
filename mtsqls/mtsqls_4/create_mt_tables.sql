@@ -26,7 +26,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_catalog_page*.dat'
+location 'DBFS_MT_FILES/4/s_catalog_page'
 ;
 
 
@@ -52,7 +52,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_zip_to_gmt*.dat'
+location 'DBFS_MT_FILES/4/s_zip_to_gmt'
 ;
 
 
@@ -85,7 +85,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_purchase_lineitem*.dat'
+location 'DBFS_MT_FILES/4/s_purchase_lineitem'
 ;
 
 
@@ -146,7 +146,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_customer*.dat'
+location 'DBFS_MT_FILES/4/s_customer'
 ;
 
 
@@ -181,7 +181,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_customer_address*.dat'
+location 'DBFS_MT_FILES/4/s_customer_address'
 ;
 
 
@@ -213,7 +213,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_purchase*.dat'
+location 'DBFS_MT_FILES/4/s_purchase'
 ;
 
 
@@ -245,7 +245,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_catalog_order*.dat'
+location 'DBFS_MT_FILES/4/s_catalog_order'
 ;
 
 
@@ -277,7 +277,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_web_order*.dat'
+location 'DBFS_MT_FILES/4/s_web_order'
 ;
 
 
@@ -311,7 +311,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_item*.dat'
+location 'DBFS_MT_FILES/4/s_item'
 ;
 
 
@@ -347,7 +347,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_catalog_order_lineitem*.dat'
+location 'DBFS_MT_FILES/4/s_catalog_order_lineitem'
 ;
 
 
@@ -382,7 +382,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_web_order_lineitem*.dat'
+location 'DBFS_MT_FILES/4/s_web_order_lineitem'
 ;
 
 
@@ -417,7 +417,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_store*.dat'
+location 'DBFS_MT_FILES/4/s_store'
 ;
 
 
@@ -451,7 +451,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_call_center*.dat'
+location 'DBFS_MT_FILES/4/s_call_center'
 ;
 
 
@@ -482,7 +482,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_web_site*.dat'
+location 'DBFS_MT_FILES/4/s_web_site'
 ;
 
 
@@ -509,7 +509,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_warehouse*.dat'
+location 'DBFS_MT_FILES/4/s_warehouse'
 ;
 
 
@@ -543,7 +543,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_web_page*.dat'
+location 'DBFS_MT_FILES/4/s_web_page'
 ;
 
 
@@ -585,7 +585,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_promotion*.dat'
+location 'DBFS_MT_FILES/4/s_promotion'
 ;
 
 
@@ -626,7 +626,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_store_returns*.dat'
+location 'DBFS_MT_FILES/4/s_store_returns'
 ;
 
 
@@ -670,7 +670,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_catalog_returns*.dat'
+location 'DBFS_MT_FILES/4/s_catalog_returns'
 ;
 
 
@@ -711,7 +711,7 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_web_returns*.dat'
+location 'DBFS_MT_FILES/4/s_web_returns'
 ;
 
 
@@ -739,5 +739,5 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/4/s_inventory*.dat'
+location 'DBFS_MT_FILES/4/s_inventory'
 ;

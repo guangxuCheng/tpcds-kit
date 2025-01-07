@@ -26,12 +26,12 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_catalog_page*.dat'
+location 'DBFS_MT_FILES/1/s_catalog_page'
 ;
 
 
 -- ============================================================
---   Table: s_zip_to_gmt
+--   Table: s_zip_to_gmt                                       
 -- ============================================================
 drop table if exists s_zip_to_gmt_1;
 create table s_zip_to_gmt_1
@@ -39,7 +39,7 @@ create table s_zip_to_gmt_1
     zipg_zip                    char(5)               not null,
     zipg_gmt_offset             integer               not null
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -52,13 +52,13 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_zip_to_gmt*.dat'
+location 'DBFS_MT_FILES/1/s_zip_to_gmt'
 ;
 
 
 
 -- ============================================================
---   Table: s_purchase_lineitem
+--   Table: s_purchase_lineitem                                
 -- ============================================================
 drop table if exists s_purchase_lineitem_1;
 create table s_purchase_lineitem_1
@@ -70,9 +70,9 @@ create table s_purchase_lineitem_1
     plin_quantity               bigint                        ,
     plin_sale_price             decimal(7,2)                  ,
     plin_coupon_amt             decimal(7,2)                  ,
-    plin_comment                varchar(100)
+    plin_comment                varchar(100)                  
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -85,12 +85,12 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_purchase_lineitem*.dat'
+location 'DBFS_MT_FILES/1/s_purchase_lineitem'
 ;
 
 
 -- ============================================================
---   Table: s_customer
+--   Table: s_customer                                         
 -- ============================================================
 drop table if exists s_customer_1;
 create table s_customer_1
@@ -131,9 +131,9 @@ create table s_customer_1
     cust_depend_emp_cnt         smallint                      ,
     cust_depend_college_cnt     smallint                      ,
     cust_vehicle_cnt            smallint                      ,
-    cust_annual_income          decimal(9,2)
+    cust_annual_income          decimal(9,2)                  
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -146,12 +146,12 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_customer*.dat'
+location 'DBFS_MT_FILES/1/s_customer'
 ;
 
 
 -- ============================================================
---   Table: s_customer_address
+--   Table: s_customer_address                                 
 -- ============================================================
 drop table if exists s_customer_address_1;
 create table s_customer_address_1
@@ -166,9 +166,9 @@ create table s_customer_address_1
     cadr_county                 char(30)                      ,
     cadr_state                  char(2)                       ,
     cadr_zip                    char(10)                      ,
-    cadr_country                char(20)
+    cadr_country                char(20)                      
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -181,12 +181,12 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_customer_address*.dat'
+location 'DBFS_MT_FILES/1/s_customer_address'
 ;
 
 
 -- ============================================================
---   Table: s_purchase
+--   Table: s_purchase                                         
 -- ============================================================
 drop table if exists s_purchase_1;
 create table s_purchase_1
@@ -198,9 +198,9 @@ create table s_purchase_1
     purc_purchase_time          integer                       ,
     purc_register_id            integer                       ,
     purc_clerk_id               integer                       ,
-    purc_comment                char(100)
+    purc_comment                char(100)                     
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -213,12 +213,12 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_purchase*.dat'
+location 'DBFS_MT_FILES/1/s_purchase'
 ;
 
 
 -- ============================================================
---   Table: s_catalog_order
+--   Table: s_catalog_order                                    
 -- ============================================================
 drop table if exists s_catalog_order_1;
 create table s_catalog_order_1
@@ -230,9 +230,9 @@ create table s_catalog_order_1
     cord_order_time             integer                       ,
     cord_ship_mode_id           char(16)                      ,
     cord_call_center_id         char(16)                      ,
-    cord_order_comments         varchar(100)
+    cord_order_comments         varchar(100)                  
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -245,12 +245,12 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_catalog_order*.dat'
+location 'DBFS_MT_FILES/1/s_catalog_order'
 ;
 
 
 -- ============================================================
---   Table: s_web_order
+--   Table: s_web_order                                        
 -- ============================================================
 drop table if exists s_web_order_1;
 create table s_web_order_1
@@ -262,9 +262,9 @@ create table s_web_order_1
     word_order_time             integer                       ,
     word_ship_mode_id           char(16)                      ,
     word_web_site_id            char(16)                      ,
-    word_order_comments         char(100)
+    word_order_comments         char(100)                     
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -277,12 +277,12 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_web_order*.dat'
+location 'DBFS_MT_FILES/1/s_web_order'
 ;
 
 
 -- ============================================================
---   Table: s_item
+--   Table: s_item                                             
 -- ============================================================
 drop table if exists s_item_1;
 create table s_item_1
@@ -296,9 +296,9 @@ create table s_item_1
     item_color                  char(20)                      ,
     item_units                  char(10)                      ,
     item_container              char(10)                      ,
-    item_manager_id             integer
+    item_manager_id             integer                       
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -311,12 +311,12 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_item*.dat'
+location 'DBFS_MT_FILES/1/s_item'
 ;
 
 
 -- ============================================================
---   Table: s_catalog_order_lineitem
+--   Table: s_catalog_order_lineitem                           
 -- ============================================================
 drop table if exists s_catalog_order_lineitem_1;
 create table s_catalog_order_lineitem_1
@@ -332,9 +332,9 @@ create table s_catalog_order_lineitem_1
     clin_ship_date              char(10)                      ,
     clin_catalog_number         integer                       ,
     clin_catalog_page_number    integer                       ,
-    clin_ship_cost              decimal(7,2)
+    clin_ship_cost              decimal(7,2)                  
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -347,12 +347,12 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_catalog_order_lineitem*.dat'
+location 'DBFS_MT_FILES/1/s_catalog_order_lineitem'
 ;
 
 
 -- ============================================================
---   Table: s_web_order_lineitem
+--   Table: s_web_order_lineitem                               
 -- ============================================================
 drop table if exists s_web_order_lineitem_1;
 create table s_web_order_lineitem_1
@@ -367,9 +367,9 @@ create table s_web_order_lineitem_1
     wlin_warehouse_id           char(16)                      ,
     wlin_ship_date              char(10)                      ,
     wlin_ship_cost              decimal(7,2)                  ,
-    wlin_web_page_id            char(16)
+    wlin_web_page_id            char(16)                      
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -382,12 +382,12 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_web_order_lineitem*.dat'
+location 'DBFS_MT_FILES/1/s_web_order_lineitem'
 ;
 
 
 -- ============================================================
---   Table: s_store
+--   Table: s_store                                            
 -- ============================================================
 drop table if exists s_store_1;
 create table s_store_1
@@ -402,9 +402,9 @@ create table s_store_1
     stor_market_id              integer                       ,
     stor_geography_class        char(100)                     ,
     stor_market_manager         char(40)                      ,
-    stor_tax_percentage         decimal(5,2)
+    stor_tax_percentage         decimal(5,2)                  
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -417,12 +417,12 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_store*.dat'
+location 'DBFS_MT_FILES/1/s_store'
 ;
 
 
 -- ============================================================
---   Table: s_call_center
+--   Table: s_call_center                                      
 -- ============================================================
 drop table if exists s_call_center_1;
 create table s_call_center_1
@@ -436,9 +436,9 @@ create table s_call_center_1
     call_center_sq_ft           integer                       ,
     call_center_hours           char(20)                      ,
     call_center_manager         char(40)                      ,
-    call_center_tax_percentage  decimal(7,2)
+    call_center_tax_percentage  decimal(7,2)                  
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -451,12 +451,12 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_call_center*.dat'
+location 'DBFS_MT_FILES/1/s_call_center'
 ;
 
 
 -- ============================================================
---   Table: s_web_site
+--   Table: s_web_site                                         
 -- ============================================================
 drop table if exists s_web_site_1;
 create table s_web_site_1
@@ -467,9 +467,9 @@ create table s_web_site_1
     wsit_site_name              char(50)                      ,
     wsit_site_class             char(50)                      ,
     wsit_site_manager           char(40)                      ,
-    wsit_tax_percentage         decimal(5,2)
+    wsit_tax_percentage         decimal(5,2)                  
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -482,21 +482,21 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_web_site*.dat'
+location 'DBFS_MT_FILES/1/s_web_site'
 ;
 
 
 -- ============================================================
---   Table: s_warehouse
+--   Table: s_warehouse                                        
 -- ============================================================
 drop table if exists s_warehouse_1;
 create table s_warehouse_1
 (
     wrhs_warehouse_id           char(16)              not null,
     wrhs_warehouse_desc         char(200)                     ,
-    wrhs_warehouse_sq_ft        integer
+    wrhs_warehouse_sq_ft        integer                       
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -509,12 +509,12 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_warehouse*.dat'
+location 'DBFS_MT_FILES/1/s_warehouse'
 ;
 
 
 -- ============================================================
---   Table: s_web_page
+--   Table: s_web_page                                         
 -- ============================================================
 drop table if exists s_web_page_1;
 create table s_web_page_1
@@ -528,9 +528,9 @@ create table s_web_page_1
     wpag_char_cnt               integer                       ,
     wpag_link_cnt               integer                       ,
     wpag_image_cnt              integer                       ,
-    wpag_max_ad_cnt             integer
+    wpag_max_ad_cnt             integer                       
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -543,12 +543,12 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_web_page*.dat'
+location 'DBFS_MT_FILES/1/s_web_page'
 ;
 
 
 -- ============================================================
---   Table: s_promotion
+--   Table: s_promotion                                        
 -- ============================================================
 drop table if exists s_promotion_1;
 create table s_promotion_1
@@ -570,9 +570,9 @@ create table s_promotion_1
     prom_channel_details        char(100)                     ,
     prom_purpose                char(15)                      ,
     prom_discount_active        char(1)                       ,
-    prom_discount_pct           decimal(5,2)
+    prom_discount_pct           decimal(5,2)                  
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -585,12 +585,12 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_promotion*.dat'
+location 'DBFS_MT_FILES/1/s_promotion'
 ;
 
 
 -- ============================================================
---   Table: s_store_returns
+--   Table: s_store_returns                                    
 -- ============================================================
 drop table if exists s_store_returns_1;
 create table s_store_returns_1
@@ -611,9 +611,9 @@ create table s_store_returns_1
     sret_refunded_cash          decimal(7,2)                  ,
     sret_reversed_charge        decimal(7,2)                  ,
     sret_store_credit           decimal(7,2)                  ,
-    sret_reason_id              char(16)
+    sret_reason_id              char(16)                      
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -626,12 +626,12 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_store_returns*.dat'
+location 'DBFS_MT_FILES/1/s_store_returns'
 ;
 
 
 -- ============================================================
---   Table: s_catalog_returns
+--   Table: s_catalog_returns                                  
 -- ============================================================
 drop table if exists s_catalog_returns_1;
 create table s_catalog_returns_1
@@ -655,9 +655,9 @@ create table s_catalog_returns_1
     cret_reason_id              char(16)                      ,
     cret_shipmode_id            char(16)                      ,
     cret_catalog_page_id        char(16)                      ,
-    cret_warehouse_id           char(16)
+    cret_warehouse_id           char(16)                      
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -670,12 +670,12 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_catalog_returns*.dat'
+location 'DBFS_MT_FILES/1/s_catalog_returns'
 ;
 
 
 -- ============================================================
---   Table: s_web_returns
+--   Table: s_web_returns                                      
 -- ============================================================
 drop table if exists s_web_returns_1;
 create table s_web_returns_1
@@ -696,9 +696,9 @@ create table s_web_returns_1
     wret_refunded_cash          decimal(7,2)                  ,
     wret_reversed_charge        decimal(7,2)                  ,
     wret_account_credit         decimal(7,2)                  ,
-    wret_reason_id              char(16)
+    wret_reason_id              char(16)                      
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -711,12 +711,12 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_web_returns*.dat'
+location 'DBFS_MT_FILES/1/s_web_returns'
 ;
 
 
 -- ============================================================
---   Table: s_inventory
+--   Table: s_inventory                                        
 -- ============================================================
 drop table if exists s_inventory_1;
 create table s_inventory_1
@@ -724,9 +724,9 @@ create table s_inventory_1
     invn_warehouse_id           char(16)              not null,
     invn_item_id                char(16)              not null,
     invn_date                   char(10)              not null,
-    invn_qty_on_hand            integer
+    invn_qty_on_hand            integer                       
 )
-USING csv
+USING csv 
 OPTIONS (
   sep="|",
   header="false",
@@ -739,5 +739,5 @@ OPTIONS (
   locale="en-US",
   lineSep="\n"
 )
-location 'DBFS_MT_FILES/1/s_inventory*.dat'
+location 'DBFS_MT_FILES/1/s_inventory'
 ;
