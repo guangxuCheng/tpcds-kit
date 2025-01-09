@@ -5,5 +5,7 @@ create table inventory
     inv_warehouse_sk          int                           ,
     inv_quantity_on_hand      int                            
 ) 
-USING DELTA
-PARTITIONED BY (inv_date_sk) ;
+USING PARQUET
+PARTITIONED BY (inv_date_sk)
+CLUSTERED BY (inv_item_sk, inv_warehouse_sk)
+INTO 3 BUCKETS;
