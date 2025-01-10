@@ -1,2 +1,2 @@
-INSERT OVERWRITE TABLE store_sales SELECT * FROM store_sales_ext ss DISTRIBUTE BY ss_sold_date_sk, bucket(3, ss_item_sk);
+INSERT OVERWRITE TABLE store_sales SELECT * FROM store_sales_ext ss CLUSTER BY ss_sold_date_sk;
 analyze table store_sales COMPUTE STATISTICS  for all columns;
