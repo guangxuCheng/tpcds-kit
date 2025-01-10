@@ -30,5 +30,5 @@ create table catalog_returns
 ) 
 USING PARQUET
 PARTITIONED BY (cr_returned_date_sk)
-CLUSTERED BY (cr_item_sk, cr_order_number)
+CLUSTERED BY (cr_item_sk)
 INTO 3 BUCKETS;

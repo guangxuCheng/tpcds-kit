@@ -23,5 +23,5 @@ create table store_returns
 ) 
 USING PARQUET
 PARTITIONED BY (sr_returned_date_sk)
-CLUSTERED BY (sr_item_sk, sr_ticket_number)
+CLUSTERED BY (sr_item_sk)
 INTO 3 BUCKETS;

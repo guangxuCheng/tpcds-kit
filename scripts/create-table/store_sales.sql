@@ -26,5 +26,5 @@ create table store_sales
 ) 
 USING PARQUET
 PARTITIONED BY (ss_sold_date_sk)
-CLUSTERED BY (ss_item_sk, ss_ticket_number)
+CLUSTERED BY (ss_item_sk)
 INTO 3 BUCKETS;

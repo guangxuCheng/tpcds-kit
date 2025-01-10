@@ -27,5 +27,5 @@ create table web_returns
 ) 
 USING PARQUET
 PARTITIONED BY (wr_returned_date_sk)
-CLUSTERED BY (wr_item_sk, wr_order_number)
+CLUSTERED BY (wr_item_sk)
 INTO 3 BUCKETS;

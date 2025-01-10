@@ -37,5 +37,5 @@ create table catalog_sales
 ) 
 USING PARQUET
 PARTITIONED BY (cs_sold_date_sk)
-CLUSTERED BY (cs_item_sk, cs_order_number)
+CLUSTERED BY (cs_item_sk)
 INTO 3 BUCKETS;

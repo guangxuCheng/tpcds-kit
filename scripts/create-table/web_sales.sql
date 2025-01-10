@@ -37,5 +37,5 @@ create table web_sales
 ) 
 USING PARQUET
 PARTITIONED BY (ws_sold_date_sk)
-CLUSTERED BY (ws_item_sk, ws_order_number)
+CLUSTERED BY (ws_item_sk)
 INTO 3 BUCKETS;
