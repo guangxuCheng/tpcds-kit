@@ -35,7 +35,5 @@ create table catalog_sales
     cs_net_paid_inc_ship_tax  decimal(7,2)                  ,
     cs_net_profit             decimal(7,2)                   
 ) 
-USING PARQUET
-PARTITIONED BY (cs_sold_date_sk)
-CLUSTERED BY (cs_item_sk)
-INTO 3 BUCKETS;
+USING DELTA
+PARTITIONED BY (cs_sold_date_sk);

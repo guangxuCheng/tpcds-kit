@@ -24,7 +24,5 @@ create table store_sales
     ss_net_paid_inc_tax       decimal(7,2)                  ,
     ss_net_profit             decimal(7,2)                   
 ) 
-USING PARQUET
-PARTITIONED BY (ss_sold_date_sk)
-CLUSTERED BY (ss_item_sk)
-INTO 3 BUCKETS;
+USING DELTA
+PARTITIONED BY (ss_sold_date_sk);

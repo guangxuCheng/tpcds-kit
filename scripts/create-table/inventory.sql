@@ -5,5 +5,5 @@ create table inventory
     inv_warehouse_sk          int                           ,
     inv_quantity_on_hand      int                            
 ) 
-USING PARQUET
+USING DELTA
 PARTITIONED BY (inv_date_sk);

@@ -25,7 +25,5 @@ create table web_returns
     wr_account_credit         decimal(7,2)                  ,
     wr_net_loss               decimal(7,2)                   
 ) 
-USING PARQUET
-PARTITIONED BY (wr_returned_date_sk)
-CLUSTERED BY (wr_item_sk)
-INTO 3 BUCKETS;
+USING DELTA
+PARTITIONED BY (wr_returned_date_sk);

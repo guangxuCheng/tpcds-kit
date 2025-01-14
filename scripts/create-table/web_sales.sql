@@ -35,7 +35,5 @@ create table web_sales
     ws_net_paid_inc_ship_tax  decimal(7,2)                  ,
     ws_net_profit             decimal(7,2)                   
 ) 
-USING PARQUET
-PARTITIONED BY (ws_sold_date_sk)
-CLUSTERED BY (ws_item_sk)
-INTO 3 BUCKETS;
+USING DELTA
+PARTITIONED BY (ws_sold_date_sk);

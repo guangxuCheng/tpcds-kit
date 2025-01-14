@@ -21,7 +21,5 @@ create table store_returns
     sr_store_credit           decimal(7,2)                  ,
     sr_net_loss               decimal(7,2)                   
 ) 
-USING PARQUET
-PARTITIONED BY (sr_returned_date_sk)
-CLUSTERED BY (sr_item_sk)
-INTO 3 BUCKETS;
+USING DELTA
+PARTITIONED BY (sr_returned_date_sk);

@@ -28,7 +28,5 @@ create table catalog_returns
     cr_store_credit           decimal(7,2)                  ,
     cr_net_loss               decimal(7,2)                   
 ) 
-USING PARQUET
-PARTITIONED BY (cr_returned_date_sk)
-CLUSTERED BY (cr_item_sk)
-INTO 3 BUCKETS;
+USING DELTA
+PARTITIONED BY (cr_returned_date_sk);
