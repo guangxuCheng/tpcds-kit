@@ -20,4 +20,4 @@ create table DB_NAME.customer_ext
     c_last_review_date_sk     int                       
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'DATA_FILES_PATH/customer_ext';
+LOCATION 'DATA_FILES_PATH/customer';

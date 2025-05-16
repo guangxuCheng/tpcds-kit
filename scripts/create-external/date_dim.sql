@@ -30,4 +30,4 @@ create table DB_NAME.date_dim_ext
     d_current_year            varchar(1)                        
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'DATA_FILES_PATH/date_dim_ext';
+LOCATION 'DATA_FILES_PATH/date_dim';

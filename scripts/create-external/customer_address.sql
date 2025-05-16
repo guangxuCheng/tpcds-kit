@@ -15,4 +15,4 @@ create table DB_NAME.customer_address_ext
     ca_location_type          varchar(20)                       
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'DATA_FILES_PATH/customer_address_ext';
+LOCATION 'DATA_FILES_PATH/customer_address';

@@ -11,4 +11,4 @@ create table DB_NAME.catalog_page_ext
     cp_type                   varchar(100)                   
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'DATA_FILES_PATH/catalog_page_ext';
+LOCATION 'DATA_FILES_PATH/catalog_page';

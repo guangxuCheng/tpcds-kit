@@ -33,4 +33,4 @@ create table DB_NAME.call_center_ext
     cc_tax_percentage         decimal(5,2)                   
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'DATA_FILES_PATH/call_center_ext';
+LOCATION 'DATA_FILES_PATH/call_center';

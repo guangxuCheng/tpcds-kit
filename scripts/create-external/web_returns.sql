@@ -26,4 +26,4 @@ create table DB_NAME.web_returns_ext
     wr_net_loss               decimal(7,2)                   
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'DATA_FILES_PATH/web_returns_ext';
+LOCATION 'DATA_FILES_PATH/web_returns';

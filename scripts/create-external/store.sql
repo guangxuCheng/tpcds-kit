@@ -31,4 +31,4 @@ create table DB_NAME.store_ext
     s_tax_precentage          decimal(5,2)                   
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'DATA_FILES_PATH/store_ext';
+LOCATION 'DATA_FILES_PATH/store';

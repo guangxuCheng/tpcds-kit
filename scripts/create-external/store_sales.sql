@@ -25,4 +25,4 @@ create table DB_NAME.store_sales_ext
     ss_net_profit             decimal(7,2)                   
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'DATA_FILES_PATH/store_sales_ext';
+LOCATION 'DATA_FILES_PATH/store_sales';

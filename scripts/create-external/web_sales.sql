@@ -36,4 +36,4 @@ create table DB_NAME.web_sales_ext
     ws_net_profit             decimal(7,2)                   
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'DATA_FILES_PATH/web_sales_ext';
+LOCATION 'DATA_FILES_PATH/web_sales';

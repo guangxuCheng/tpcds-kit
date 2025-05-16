@@ -22,4 +22,4 @@ create table DB_NAME.store_returns_ext
     sr_net_loss               decimal(7,2)                   
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'DATA_FILES_PATH/store_returns_ext';
+LOCATION 'DATA_FILES_PATH/store_returns';

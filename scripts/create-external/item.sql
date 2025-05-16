@@ -24,4 +24,4 @@ create table DB_NAME.item_ext
     i_product_name            varchar(50)                       
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'DATA_FILES_PATH/item_ext';
+LOCATION 'DATA_FILES_PATH/item';

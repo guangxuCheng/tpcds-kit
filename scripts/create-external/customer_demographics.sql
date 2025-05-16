@@ -11,4 +11,4 @@ create table DB_NAME.customer_demographics_ext
     cd_dep_college_count      int                            
 ) 
 USING com.databricks.spark.csv OPTIONS ( `inferSchema` 'false', `header` 'false', `delimiter` '|', nullValue '')
-LOCATION 'DATA_FILES_PATH/customer_demographics_ext';
+LOCATION 'DATA_FILES_PATH/customer_demographics';
